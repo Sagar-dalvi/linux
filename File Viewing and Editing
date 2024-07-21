@@ -40,32 +40,32 @@ nano is a simple, user-friendly text editor for the command line. Here's a quick
 
 Basic Usage
 
-•	Open a File:
+	Open a File:
 	To edit a file, type nano filename.
-o	Example: nano example.txt
-•	Save Changes:
-o	Press Ctrl + O (Write Out), then press Enter to confirm the filename.
-•	Exit:
-o	Press Ctrl + X to exit. If there are unsaved changes, nano will ask if you want to save them.
+	Example: nano example.txt
+	Save Changes:
+	Press Ctrl + O (Write Out), then press Enter to confirm the filename.
+	Exit:
+	Press Ctrl + X to exit. If there are unsaved changes, nano will ask if you want to save them.
 
 Basic Commands
-•	Cut Text:
-o	Press Ctrl + K to cut the current line.
-•	Paste Text:
-o	Press Ctrl + U to paste the previously cut text.
-•	Search Text:
-o	Press Ctrl + W, then type your search term and press Enter.
-•	Go to a Line Number:
-o	Press Ctrl + _ (underscore), then enter the line number and press Enter.
-•	Undo Changes:
-o	Press Ctrl + Z to undo the last action.
+	Cut Text:
+	Press Ctrl + K to cut the current line.
+	Paste Text:
+	Press Ctrl + U to paste the previously cut text.
+	Search Text:
+	Press Ctrl + W, then type your search term and press Enter.
+	Go to a Line Number:
+	Press Ctrl + _ (underscore), then enter the line number and press Enter.
+	Undo Changes:
+	Press Ctrl + Z to undo the last action.
 
 Navigation
 
-•	Move the Cursor:
-o	Use the arrow keys to move the cursor around the file.
-•	Page Up/Page Down:
-o	Press Ctrl + Y to move up one page, and Ctrl + V to move down one page.
+	Move the Cursor:
+	Use the arrow keys to move the cursor around the file.
+	Page Up/Page Down:
+        Press Ctrl + Y to move up one page, and Ctrl + V to move down one page.
 
 
 ================================================================================================================
@@ -132,3 +132,38 @@ Press Esc, then type :q! and press Enter.
 vim (Vi IMproved) extends vi with additional features like syntax highlighting,
 multiple undo levels, and more, but the basic commands are the same.
 
+
+=========================================================================================================
+
+
+
+
+
+Viewing Files
+
+--------------------------------------------------------------------------
+cat: Concatenates and displays file content.
+
+Usage: cat filename
+Example: cat example.txt
+--------------------------------------------------------------------------
+less: Allows for page-by-page navigation through a file.
+
+Usage: less filename
+Example: less example.txt
+---------------------------------------------------------------------------
+more: Similar to less, but with fewer features.
+
+Usage: more filename
+Example: more example.txt
+---------------------------------------------------------------------------
+head: Shows the first few lines of a file.
+
+Usage: head filename
+Example: head example.txt
+---------------------------------------------------------------------------
+tail: Shows the last few lines of a file.
+
+Usage: tail filename
+Example: tail example.txt
+--------------------------------------------------------------------------
