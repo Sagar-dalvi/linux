@@ -1,0 +1,47 @@
+File Permissions
+
+--------------------------------------------------------
+
+chmod - Change file permissions.
+
+chmod 755 file_name  # sets read, write, execute for owner, and read, execute for group and others
+
+Explanation:
+
+chmod: The command used to modify file or directory permissions.
+755: The permission string that defines the access levels:
+The first digit (7): Represents permissions for the owner (user):
+4 (read) + 2 (write) + 1 (execute) = 7 (full permissions)
+The second digit (5): Represents permissions for the group:
+4 (read) + 1 (execute) = 5 (read and execute)
+The third digit (5): Represents permissions for others (world):
+4 (read) + 1 (execute) = 5 (read and execute)
+Example: chmod 755 my_script.sh
+----------------------------------------------------------------------------------------------------------------------
+
+chown - Change file owner and group.
+
+chown user:group file_name
+---------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
