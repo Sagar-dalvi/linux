@@ -1,0 +1,134 @@
+File Viewing and Editing !
+
+
+  nano - Simple text editor.
+
+nano file_name
+====================================================================
+
+vi/vim - Advanced text editor.
+
+vi file_name
+=========================================================================
+
+less - View file content one screen at a time.
+
+less file_name
+==========================================================================
+(optional)
+gedit: GUI text editor (for GNOME desktop environment).
+
+Usage: gedit filename
+Example: gedit example.txt
+==========================================================================
+
+emacs: Advanced text editor with many features.
+
+Usage: emacs filename
+Example: emacs example.txt
+
+=============================================================================
+
+
+
+
+use case for controlling Editor!
+
+File Viewing and Editing explained
+
+nano is a simple, user-friendly text editor for the command line. Here's a quick guide on how to use it:
+
+Basic Usage
+
+•	Open a File:
+	To edit a file, type nano filename.
+o	Example: nano example.txt
+•	Save Changes:
+o	Press Ctrl + O (Write Out), then press Enter to confirm the filename.
+•	Exit:
+o	Press Ctrl + X to exit. If there are unsaved changes, nano will ask if you want to save them.
+
+Basic Commands
+•	Cut Text:
+o	Press Ctrl + K to cut the current line.
+•	Paste Text:
+o	Press Ctrl + U to paste the previously cut text.
+•	Search Text:
+o	Press Ctrl + W, then type your search term and press Enter.
+•	Go to a Line Number:
+o	Press Ctrl + _ (underscore), then enter the line number and press Enter.
+•	Undo Changes:
+o	Press Ctrl + Z to undo the last action.
+
+Navigation
+
+•	Move the Cursor:
+o	Use the arrow keys to move the cursor around the file.
+•	Page Up/Page Down:
+o	Press Ctrl + Y to move up one page, and Ctrl + V to move down one page.
+
+
+================================================================================================================
+
+
+vi and vim are powerful text editors that provide extensive functionality for editing text files.
+Here’s a basic overview of how to use them:
+
+Starting vi or vim
+Open a File:
+To edit a file, type vi filename or vim filename.
+Example: vi example.txt or vim example.txt
+Modes
+vi and vim have different modes. Understanding these modes is crucial:
+
+Normal Mode: Default mode for navigation and commands.
+
+Enter Normal Mode: Press Esc (if you're not already in this mode).
+Insert Mode: For inserting text.
+
+Enter Insert Mode: Press i (insert before the cursor), I (insert at the beginning of the line),
+a (append after the cursor), A (append at the end of the line), o (open a new line below),
+or O (open a new line above).
+Command-Line Mode: For executing commands.
+
+Enter Command-Line Mode: Press : (colon) from Normal Mode.
+Basic Commands
+Normal Mode
+
+Move Cursor:
+Arrow keys or h (left), j (down), k (up), l (right).
+Delete Text:
+
+x (delete character under the cursor), dd (delete the current line), d followed by movement keys 
+(delete up to that position).
+
+Copy/Paste Text:
+yy (copy the current line), p (paste after the cursor), P (paste before the cursor).
+Undo Changes:
+
+u (undo the last change), Ctrl + r (redo the undone change).
+Insert Mode
+Type Text: Simply type the text you want to insert.
+Command-Line Mode
+
+Save and Exit:
+:w (save the file), :q (quit), :wq or :x (save and quit).
+
+Quit Without Saving:
+:q! (force quit without saving changes).
+
+Search Text:
+:/searchterm (search for text), n (next occurrence), N (previous occurrence).
+
+Replace Text:
+:%s/old/new/g (replace all occurrences of "old" with "new").
+Exiting
+
+Save Changes and Exit:
+Press Esc to ensure you're in Normal Mode, then type :wq and press Enter.
+
+Exit Without Saving:
+Press Esc, then type :q! and press Enter.
+vim (Vi IMproved) extends vi with additional features like syntax highlighting,
+multiple undo levels, and more, but the basic commands are the same.
+
