@@ -1,0 +1,125 @@
+User and Group Management
+__________________________________________________________________
+
+adduser or useradd - Add a new user
+
+adduser username
+useradd username  # less interactive, may require extra steps
+=================================================================================
+
+passwd - Change user password.
+
+passwd username
+
+===================================================================================
+
+  deluser or userdel - Delete a user.
+
+deluser username
+userdel username  # may require additional options to remove home directory, etc.
+====================================================================================
+
+groupadd - Add a new group.
+
+groupadd groupname
+====================================================================================
+
+usermod - Modify a user account.
+
+usermod -aG groupname username  # add user to a group
+=====================================================================================
+
+
+
+
+
+_______________________________________________________________________________________________________________________
+User Management
+Add a New User:
+
+Command: sudo adduser username
+Example: sudo adduser john
+This command will create a new user named john and prompt you to set a password and other details.
+Delete a User:
+
+Command: sudo deluser username
+Example: sudo deluser john
+This command will delete the user john.
+Change a User's Password:
+
+Command: sudo passwd username
+Example: sudo passwd john
+This command will prompt you to enter a new password for the user john.
+Modify a User:
+
+Command: sudo usermod options username
+Example: sudo usermod -aG sudo john
+This command will add the user john to the sudo group, allowing john to perform administrative tasks.
+Lock a User Account:
+
+Command: sudo usermod -L username
+Example: sudo usermod -L john
+This command will lock the user john, preventing them from logging in.
+Unlock a User Account:
+
+Command: sudo usermod -U username
+Example: sudo usermod -U john
+This command will unlock the user john, allowing them to log in again.
+Create a User with a Specific Home Directory:
+
+Command: sudo adduser --home /custom/path username
+Example: sudo adduser --home /home/custom john
+This command will create a new user john with the home directory /home/custom.
+Group Management
+Add a New Group:
+
+Command: sudo addgroup groupname
+Example: sudo addgroup developers
+This command will create a new group named developers.
+Delete a Group:
+
+Command: sudo delgroup groupname
+Example: sudo delgroup developers
+This command will delete the group developers.
+Add a User to a Group:
+
+Command: sudo usermod -aG groupname username
+Example: sudo usermod -aG developers john
+This command will add the user john to the developers group.
+Remove a User from a Group:
+
+Command: sudo deluser username groupname
+Example: sudo deluser john developers
+This command will remove the user john from the developers group.
+Create a User and Add to a Group Simultaneously:
+
+Command: sudo adduser username groupname
+Example: sudo adduser john developers
+This command will create a new user john and add them to the developers group.
+View User and Group Information
+List All Users:
+
+Command: cat /etc/passwd
+Example: cat /etc/passwd
+This command will display a list of all users on the system.
+List All Groups:
+
+Command: cat /etc/group
+Example: cat /etc/group
+This command will display a list of all groups on the system.
+Show User's Groups:
+
+Command: groups username
+Example: groups john
+This command will display all the groups that the user john belongs to.
+Show Current User's Groups:
+
+Command: groups
+Example: groups
+This command will display all the groups that the current user belongs to.
+These commands and examples cover the basics of user and group management on a Linux system, 
+helping you to efficiently manage user accounts and group memberships.
+
+
+_______________________________________________________________________________________________________________
+
