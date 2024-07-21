@@ -1,0 +1,46 @@
+File permissions are a fundamental security concept in Linux that control how users can interact with files and directories.
+They determine who can access the file, and what actions they can perform (read, write, or execute).
+
+Here's a breakdown of the key aspects of file permissions in Linux:
+
+User Classes:
+
+Owner: The user who created the file or directory.
+Group: A group of users that can be assigned ownership of files and directories. Users can belong to multiple groups.
+Others: All users on the system who are not the owner or part of the group.
+Permission Types:
+
+Read (r): Allows users to view the contents of a file or list the contents of a directory.
+Write (w): Allows users to modify the contents of a file or create/delete files within a directory.
+Execute (x): Allows users to run a file as a program if it's executable, or enter a directory if it's a directory.
+Permission Representation:
+
+Symbolic Notation: Letters represent permissions:
+r for read
+w for write
+x for execute
+Numeric Notation: Permissions are represented as a 3-digit octal number, where each digit corresponds to the permissions for a user class (owner, group, others).
+1 represents execute permission
+2 represents write permission
+4 represents read permission
+To calculate the octal number, add the values of the permissions granted (e.g., rwx = 4 + 2 + 1 = 7).
+Setting Permissions:
+
+Use the chmod command to change file or directory permissions.
+Symbolic notation: chmod [ugo][+-=][rwx] filename (e.g., chmod u+w filename to grant write permission to the owner)
+Numeric notation: chmod octal_number filename (e.g., chmod 755 filename to set full permissions for owner, read and execute for group and others)
+Common Permission Examples:
+
+755: Full permissions for owner, read and execute for group and others (commonly used for executable files).
+644: Read and write for owner, read-only for group and others (commonly used for data files).
+700: Full permissions for owner only (restrictive permissions for sensitive files).
+Understanding Permissions:
+
+Permissions are essential for maintaining system security. Granting unnecessary access can lead to vulnerabilities.
+Use ls -l to view detailed file information, including permissions.
+Be cautious when modifying permissions on system files or critical directories.
+Additional Considerations:
+
+Special permissions like setuid (setuid bit) and setgid (setgid bit) can change the process ownership when a file is executed. These should be used with caution.
+Access Control Lists (ACLs) can provide more granular permission control than traditional owner/group/others permissions.
+By understanding file permissions, you can effectively manage access to your files and directories in Linux, ensuring security and proper control over your data.
