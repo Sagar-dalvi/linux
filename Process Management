@@ -1,0 +1,17 @@
+Process Management
+
+ps - Display current processes.
+
+ps
+ps aux  # detailed view
+------------------------------------------
+
+top - Display and manage running processes.
+
+top
+------------------------------------------
+
+kill - Kill a process by ID.
+
+kill PID
+kill -9 PID  # force kill
