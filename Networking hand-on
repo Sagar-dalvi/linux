@@ -1,0 +1,17 @@
+Networking linux
+
+ping - Check network connectivity.
+
+ping hostname_or_ip
+
+========================================================
+
+ifconfig - Display or configure network interfaces.
+
+ifconfig
+========================================================
+
+  ssh - Securely connect to a remote machine.
+
+ssh user@hostname_or_ip
+=========================================================
