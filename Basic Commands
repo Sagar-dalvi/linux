@@ -1,0 +1,63 @@
+Basic Commands
+
+<1> ls - List directory contents.
+
+ls
+ls -l  # detailed list
+ls -a  # include hidden files
+-------------------------------------------------------------------
+cd - Change directory.
+
+cd /path/to/directory
+cd ~  # go to home directory
+cd ..  # go up one directory level
+
+-------------------------------------------------------------------
+
+pwd - Print working directory.
+
+pwd
+-------------------------------------------------------------------
+
+mkdir - Create a new directory.
+
+mkdir directory_name
+---------------------------------------------------------------
+rmdir - Remove an empty directory.
+
+rmdir directory_name
+---------------------------------------------------------------
+
+rm - Remove files or directories.
+
+rm file_name
+rm -r directory_name  # remove directory and its contents
+-----------------------------------------------------------------
+cp - Copy files or directories.
+
+cp source_file destination
+cp -r source_directory destination  # copy directories
+---------------------------------------------------------------
+
+mv - Move or rename files or directories.
+
+mv old_name new_name
+mv file_name /new/path/
+-------------------------------------------------------------------
+
+touch - Create an empty file.
+
+touch file_name
+-------------------------------------------------------------------
+
+cat - Concatenate and display file content.
+
+cat file_name
+---------------------------------------------------------------------
+
+Viewing File Contents:
+
+cat: Displays the contents of a file on the screen.
+less: Displays the contents of a file one screen at a time, useful for long files.
+head: Shows the first few lines of a file.
+tail: Shows the last few lines of a file.
