@@ -1,0 +1,26 @@
+Process Management
+
+Imagine your computer as a busy kitchen.
+Each program you run is like a cook following a recipe. 
+Here's process management in simple terms:
+
+Creating a Process (Starting a Program): It's like assigning a new cook to a recipe (program). 
+They get their own workspace (memory), ingredients (resources), and follow the instructions (code).
+Monitoring Processes (Checking on Cooks): You can peek in (using ps or top) to see who's working on
+what recipe (program) and how much of the kitchen (resources) they're using (CPU, memory).
+Terminating Processes (Telling a Cook to Stop): If a cook is making a mess (causing issues) or you're 
+done with their dish (program), you can tell them to stop (using kill).
+Background Processes (Cooks Working Independently): Some cooks can work on side dishes (background programs)
+while you focus on the main course (foreground program). You can check on them later (using jobs) or bring 
+them back to the main counter (using fg).
+
+
+
+Benefits:
+
+Keeps things running smoothly: You can make sure important dishes (programs) get the ingredients (resources)
+they need to cook (run) well.
+No wasted food (resources): You can avoid unnecessary cooks (processes) taking up space and ingredients.
+Happy kitchen (stable system): By managing your cooks, you prevent a chaotic mess (system crashes) and ensure delicious results (efficient tasks).
+This is a simplified analogy, but it captures the essence of process management in Linux.
+You're the head chef, overseeing your culinary team (programs) to get the job done (tasks) efficiently!
